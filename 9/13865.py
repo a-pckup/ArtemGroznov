@@ -5,7 +5,7 @@ for i in a:
     bs = sorted(b)
     b_r = [x for x in b if b.count(x) == 1]
     if len(b_r) == 7:
-        if (bs[-1] + bs[0])  2 <= sum(bs[1:-1])  3:
+        if (bs[-1] + bs[0]) * 2 <= sum(bs[1:-1]) * 3:
             c += 1
 
 print(c)
