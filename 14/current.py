@@ -1,8 +1,8 @@
-for x in "012345678":
-    for y in "012345678":
-        num1 = int("88" + x + "4" + y, 9)
-        num2 = int("7" + x + "44" + y, 11)
-        result = num1 + num2
-        if result % 61 == 0:
-            print(result // 61)
-s
+from string import ascii_lowercase
+
+alph = "0123456789" + ascii_lowercase
+
+for p in range(10,37):
+    for x in alph[:p]:
+        for y in alph[:p]:
+            a = int("24" + x + "9", p)
