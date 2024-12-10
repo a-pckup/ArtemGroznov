@@ -1,8 +1,11 @@
-from string import ascii_lowercase
+x_1 = "111"
+x_2 = "21"
 
-alph = "0123456789" + ascii_lowercase
+def f(n, ss):
+    s = ""
+    while n > 0:
+        s = str(n % ss) + s
+        n //= ss
+    return s
 
-for p in range(10,37):
-    for x in alph[:p]:
-        for y in alph[:p]:
-            a = int("24" + x + "9", p)
+print(f(1001, 3))
